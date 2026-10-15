@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  minecraft:
+    build: .
+    container_name: mc_server
+    restart: unless-stopped
+    ports:
+      - "25565:25565/tcp"   # Java Edition Port
+      - "19132:19132/udp"   # Bedrock (PE) Port
+    volumes:
+      - mc_data:/server/world
+      - mc_logs:/server/logs
+      - mc_config:/server/plugins/Geyser-Spigot
+
+volumes:
+  mc_data:
+  mc_logs:
+  mc_config:
