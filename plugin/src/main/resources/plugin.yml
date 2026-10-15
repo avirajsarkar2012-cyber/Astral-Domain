@@ -1,0 +1,21 @@
+name: AstralDomain
+version: 1.0.0
+main: com.astraldomain.server.AstralDomainPlugin
+api-version: '1.20'
+description: Spawn commands and configurable player join/leave messages.
+commands:
+  spawn:
+    description: Teleport to the server spawn.
+    usage: /spawn
+    permission: astraldomain.spawn
+  setspawn:
+    description: Set the server spawn to your current location.
+    usage: /setspawn
+    permission: astraldomain.setspawn
+permissions:
+  astraldomain.spawn:
+    description: Allows a player to teleport to the server spawn.
+    default: true
+  astraldomain.setspawn:
+    description: Allows a player to set the server spawn.
+    default: op

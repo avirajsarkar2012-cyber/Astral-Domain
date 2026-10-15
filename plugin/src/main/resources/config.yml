@@ -1,0 +1,9 @@
+messages:
+  join: "&a%player% joined the server."
+  quit: "&e%player% left the server."
+  spawn-set: "&aServer spawn set to your current location."
+  spawn-success: "&aTeleported to spawn."
+  spawn-teleport-failed: "&cCould not teleport you to spawn."
+  spawn-unset: "&cThe server spawn has not been set yet."
+  spawn-world-unavailable: "&cThe spawn world is not currently available."
+  player-only: "&cThis command can only be used in-game."
